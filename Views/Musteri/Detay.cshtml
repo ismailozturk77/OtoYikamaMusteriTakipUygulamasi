@@ -1,0 +1,42 @@
+@model OtoYikamaMusteriTakibi.Models.Musteri
+
+@{
+    ViewBag.Title = "Müþteri Detayý";
+}
+
+<div class="container p-5">
+    <h2 class="text-center mb-4">Müþteri Detayý</h2>
+
+    <div class="card p-4 shadow">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th class="bg-light" style="width: 30%;">Ad Soyad:</th>
+                        <td>@Model.AdSoyad</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Telefon:</th>
+                        <td>@Model.Telefon</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Plaka:</th>
+                        <td>@Model.Plaka</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Hizmet:</th>
+                        <td>@Model.Hizmet</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Hizmet Tarihi:</th>
+                        <td>@Model.HizmetTarihi.ToShortDateString()</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-end mt-3">
+            <a href="@Url.Action("Index", "Musteri")" class="btn btn-secondary">Geri</a>
+        </div>
+    </div>
+</div>

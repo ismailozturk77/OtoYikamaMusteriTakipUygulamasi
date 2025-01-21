@@ -1,0 +1,45 @@
+@model OtoYikamaMusteriTakibi.Models.Musteri
+
+@{
+    ViewBag.Title = "Müþteri Sil";
+}
+
+<div class="container p-5">
+    <h2 class="text-center text-danger mb-4">Müþteri Sil</h2>
+
+    <div class="alert alert-warning text-center" role="alert">
+        <p>Bu müþteriyi silmek istediðinizden emin misiniz?</p>
+    </div>
+
+    <div class="card p-4 shadow">
+        <h5 class="card-title mb-3 text-center">@Model.AdSoyad</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th class="text-end">Ad Soyad:</th>
+                        <td>@Model.AdSoyad</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Telefon:</th>
+                        <td>@Model.Telefon</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Plaka:</th>
+                        <td>@Model.Plaka</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        @using (Html.BeginForm("Sil", "Musteri", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="id" value="@Model.Id" />
+            <div class="d-flex justify-content-center mt-4">
+                <button type="submit" class="btn btn-danger me-3">Sil</button>
+                <a href="@Url.Action("Index", "Musteri")" class="btn btn-secondary">Ýptal</a>
+            </div>
+        }
+    </div>
+</div>

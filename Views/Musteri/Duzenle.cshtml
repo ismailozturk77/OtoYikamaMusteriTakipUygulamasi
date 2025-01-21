@@ -1,0 +1,52 @@
+@model OtoYikamaMusteriTakibi.Models.Musteri
+
+@{
+    ViewBag.Title = "Müþteri Düzenle";
+}
+
+<div class="container p-5">
+    <h2 class="text-center mb-4">Müþteri Düzenle</h2>
+
+    <div class="card p-4 shadow">
+        @using (Html.BeginForm("Duzenle", "Musteri", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.AdSoyad, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.AdSoyad, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.AdSoyad, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Telefon, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.Telefon, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Telefon, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Plaka, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.Plaka, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Plaka, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Hizmet, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.Hizmet, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Hizmet, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.HizmetTarihi, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.HizmetTarihi, new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.HizmetTarihi, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <a href="@Url.Action("Index", "Musteri")" class="btn btn-secondary">Geri</a>
+            </div>
+        }
+    </div>
+</div>

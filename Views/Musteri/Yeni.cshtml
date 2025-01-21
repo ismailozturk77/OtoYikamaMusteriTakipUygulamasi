@@ -1,0 +1,64 @@
+@model OtoYikamaMusteriTakibi.Models.Musteri
+
+@{
+    ViewBag.Title = "Yeni Müþteri Ekle";
+}
+
+<div class="container p-5">
+    <h2 class="mb-5 text-center">Yeni Müþteri Ekle</h2>
+
+    <div class="card p-4 shadow">
+        @using (Html.BeginForm("Yeni", "Musteri", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AdSoyad, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(model => model.AdSoyad, new { @class = "form-control", placeholder = "Ad Soyad giriniz" })
+                        @Html.ValidationMessageFor(model => model.AdSoyad, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Telefon, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(model => model.Telefon, new { @class = "form-control", placeholder = "Telefon numarasý giriniz" })
+                        @Html.ValidationMessageFor(model => model.Telefon, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Plaka, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(model => model.Plaka, new { @class = "form-control", placeholder = "Araç plaka numarasý giriniz" })
+                        @Html.ValidationMessageFor(model => model.Plaka, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Hizmet, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(model => model.Hizmet, new { @class = "form-control", placeholder = "Hizmet bilgisi giriniz" })
+                        @Html.ValidationMessageFor(model => model.Hizmet, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.HizmetTarihi, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(model => model.HizmetTarihi, new { @class = "form-control", type = "date" })
+                        @Html.ValidationMessageFor(model => model.HizmetTarihi, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+                <a href="@Url.Action("Index", "Musteri")" class="btn btn-secondary">Geri</a>
+            </div>
+        }
+    </div>
+</div>

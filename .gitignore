@@ -1,0 +1,48 @@
+# Visual Studio ile ilgili dosyalar
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# Build sonuçlarý
+bin/
+obj/
+
+# Paket dosyalarý
+*.nupkg
+*.snupkg
+packages/
+
+# Yayýnlama sonuçlarý
+*.Publish.xml
+
+# Geçici dosyalar
+*.log
+*.tlog
+*.tmp
+*.cache
+*.ide
+*.class
+*.pyc
+*.pyo
+
+# Config dosyalarý
+appsettings.json
+appsettings.*.json
+
+# Kiþisel bilgileri saklayan dosyalar
+*.env
+*.secret
+
+# OS'e özel dosyalar
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git ile ilgili dosyalar
+*.orig
+*.rej
+
+# Diðer
+*.bak
