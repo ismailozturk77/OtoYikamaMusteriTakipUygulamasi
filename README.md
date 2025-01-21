@@ -15,7 +15,7 @@ Oto Yıkama Müşteri Takip Uygulaması, oto yıkama dükkanına gelen müşteri
 
 **Proje Kullanımı, Kod Dosyaları(Kod Yapısı, ASP.NET MVC), SQL Express Veri Tabanı Yapısı - Tanıtım, Anlatım Youtube Videosu **
 
-Link: 
+Youtube Link: https://www.youtube.com/watch?v=bb6xuRGFgpw
 
 **Müşteri Bilgisi Listeleme (Index.cshtml)**<br><br>
 ![Ekran görüntüsü 2025-01-22 000736](https://github.com/user-attachments/assets/110e4daf-6c96-402a-a448-bdc61b236396)
@@ -37,9 +37,9 @@ Link:
 ![Ekran görüntüsü 2025-01-22 000818](https://github.com/user-attachments/assets/1d31efc4-4b07-4f74-a1a6-30296f4a5487)
 
 
-**Veritabanı Yapısı için SQL Kodları:**
+**Veritabanı Tablo ve Sütun Yapısı için SQL Kodları:**
 
-CREATE DATABASE OtoYikamaVeritabani;
+CREATE DATABASE OtoYikamaVeritabani;<br><br>
 
 USE OtoYikamaVeritabani;
 CREATE TABLE Musteriler (
@@ -49,6 +49,6 @@ CREATE TABLE Musteriler (
     Plaka NVARCHAR(15) NOT NULL,
     Hizmet NVARCHAR (15) NOT NULL,
     HizmetTarihi DATETIME
-);
+);<br><br>
 
-+ Nuget Entity Framework
+**Nuget Packages > Entity Framework**
