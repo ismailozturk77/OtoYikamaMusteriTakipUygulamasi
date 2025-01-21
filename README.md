@@ -36,10 +36,11 @@ Youtube Link: https://www.youtube.com/watch?v=bb6xuRGFgpw
 **Müşteri Bilgisi Silme (Sil.cshtml)**<br><br>
 ![Ekran görüntüsü 2025-01-22 000818](https://github.com/user-attachments/assets/1d31efc4-4b07-4f74-a1a6-30296f4a5487)
 
+**Nuget Packages > Entity Framework**
 
 **Veritabanı Tablo ve Sütun Yapısı için SQL Kodları:**
 
-CREATE DATABASE OtoYikamaVeritabani;<br><br>
+CREATE DATABASE OtoYikamaVeritabani;<br>
 
 USE OtoYikamaVeritabani;
 CREATE TABLE Musteriler (
@@ -49,6 +50,4 @@ CREATE TABLE Musteriler (
     Plaka NVARCHAR(15) NOT NULL,
     Hizmet NVARCHAR (15) NOT NULL,
     HizmetTarihi DATETIME
-);<br><br>
-
-**Nuget Packages > Entity Framework**
+);<br>
