@@ -5,15 +5,19 @@
 İsmayil Öztürk
 Ögr No: 132130122 Bursa Uludağ Üniversitesi
 
-Oto Yıkama Müşteri Takip Uygulaması, oto yıkama dükkanına gelen müşterilerin bilgilerini takip etme ve yönetmeye yarayan bir web uygulamasıdır.
-Özellikler
+Oto Yıkama Müşteri Takip Uygulaması, oto yıkama dükkanına gelen müşterilerin bilgilerini takip etme ve yönetmeye yarayan bir web uygulamasıdır.<br><br>
 
-+Müşteri Bilgisi Listeleme
+**Özellikler**<br>
++Müşteri Bilgisi Listeleme<br>
++Müşteri Bilgisi Ekleme<br>
++Müşteri Bilgisi Görüntüleme<br>
++Müşteri Bilgisi Düzenleme<br>
++Müşteri Bilgisi Silme<br>
 
  Listelenen bilgiler:
 - Ad Soyad - Telefon - Plaka - Hizmet Adı - Hizmet Tarihi
 
-**Proje Kullanımı, Kod Dosyaları(Kod Yapısı, ASP.NET MVC), SQL Express Veri Tabanı Yapısı - Tanıtım, Anlatım Youtube Videosu **
+**Proje Kullanımı, Kod Dosyaları(Kod Yapısı, ASP.NET MVC), SQL Express Veri Tabanı Yapısı - Tanıtım, Anlatım Youtube Videosu**
 
 Youtube Link: https://www.youtube.com/watch?v=bb6xuRGFgpw
 
