@@ -46,12 +46,12 @@ Youtube Link: https://www.youtube.com/watch?v=bb6xuRGFgpw
 
 CREATE DATABASE OtoYikamaVeritabani;<br>
 
-USE OtoYikamaVeritabani;
-CREATE TABLE Musteriler (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    AdSoyad NVARCHAR(100) NOT NULL,
-    Telefon NVARCHAR(15) NOT NULL,
-    Plaka NVARCHAR(15) NOT NULL,
-    Hizmet NVARCHAR (15) NOT NULL,
-    HizmetTarihi DATETIME
-);<br>
+USE OtoYikamaVeritabani;<br>
+CREATE TABLE Musteriler (<br>
+    Id INT PRIMARY KEY IDENTITY(1,1),<br>
+    AdSoyad NVARCHAR(100) NOT NULL,<br>
+    Telefon NVARCHAR(15) NOT NULL,<br>
+    Plaka NVARCHAR(15) NOT NULL,<br>
+    Hizmet NVARCHAR (15) NOT NULL,<br>
+    HizmetTarihi DATETIME<br>
+);
